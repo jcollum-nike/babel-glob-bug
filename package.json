@@ -8,7 +8,8 @@
     "clean": "rm -rf cjs",
     "build:fail1": "babel src --out-dir cjs --ignore \"**/__*/**\"",
     "build:pass1": "babel src --out-dir cjs --ignore \"src/**/__mocks__/**/*.js\"",
-    "build:pass2": "babel src --out-dir cjs --ignore \"src/__mocks__/**/*.js\""
+    "build:pass2": "babel src --out-dir cjs --ignore \"src/__mocks__/**/*.js\"",
+    "ver": "babel --version"
   },
   "keywords": [],
   "author": "",
