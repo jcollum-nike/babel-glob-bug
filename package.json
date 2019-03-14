@@ -1,0 +1,26 @@
+{
+  "name": "babel-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf cjs",
+    "build:fail1": "babel src --out-dir cjs --ignore \"**/__*/**\"",
+    "build:pass1": "babel src --out-dir cjs --ignore \"src/**/__mocks__/**/*.js\"",
+    "build:pass2": "babel src --out-dir cjs --ignore \"src/__mocks__/**/*.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "~7.3.4",
+    "@babel/preset-react": "^7.0.0"
+  },
+  "dependencies": {
+    "lodash": "~4.17.11"
+  }
+}
